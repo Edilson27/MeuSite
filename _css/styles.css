@@ -1,0 +1,296 @@
+
+/* 
+    Created on : 10/06/2016, 12:06:32
+    Author     : Edilson Freire
+*/
+/*
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.container a {text-decoration: none;}
+*/
+
+/*-----------------------------------Geral------------------------------------*/
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    background: #FFF1D6;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; /*Primeira fonte para Mac OSX, 2 p Windows*/
+    line-height: 1.6; /*160% da altura entre as linhas*/
+}
+
+/*------------------------------------ Interface------------------------------*/
+
+div#interface {
+    width: 100%;
+    margin: -10px auto 0 auto;    
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+
+/*---------------------------Menu----------------------------*/
+nav#menu {
+    display: block;
+
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 520px;
+    /*left: 130px;*/
+    margin-left: -35px;
+    z-index: 2;    
+
+}
+
+nav#menu  li{    
+    display: inline-block;
+    background-color: red;    
+    padding: 20px;
+    margin: 0;
+    margin-left: -5px;
+
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+    border-radius: 0px 40px 0px 20px;
+
+}
+
+nav#menu a{
+    color: #FFF;    
+    text-decoration: none;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+    z-index: 1;
+
+}
+
+nav#menu ul {
+    /* display: none; Some o menu*/
+}
+/*---------------------------Cabeçalho--------------------------*/
+
+header#cabecalho {
+    width: 100%;
+    position: relative;
+    /*border-bottom: 1px #606060 solid;*/
+    height: 550px;    
+    padding: 0;
+    background: #000;
+    /*background: url(../_images/logo.png) no-repeat 0px 100px;*/
+    /*background: url(../_images/naruto.jpg) no-repeat;*/
+    /*background-size: cover;*/
+}
+
+header#cabecalho div#barra-superior {
+    width: 100%;
+    height: 30px;
+    background: #008;
+    margin: 0;
+
+    display: block;
+    position: relative;
+}
+
+header#cabecalho div#barra-inferior {
+    width: 100%;
+    height: 30px;
+    background: #008;
+    margin: -10px 0 0 0;
+    margin-top: 2px;
+    display: block;
+    position: relative;
+}
+header#cabecalho h1{
+    font-family: Arial, sens-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    display: none;
+}
+
+/*
+header#cabecalho img#icone {
+    position:absolute;
+    top: 60px;
+    left: 1000px;
+}*/
+
+
+#slide {
+    width: 100%;    
+    overflow: hidden;
+    height: 500px;
+    margin: 0px auto;
+    /*margin-left: -10px;*/
+    margin-top: 2px;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    background-color: #000;
+
+}
+
+#slide img{
+    position: absolute;
+    width: 100%;    
+    z-index: 2;
+    display: none; /*Por que?*/
+    left: 0;
+
+}
+
+/*---------------------------Titulos--------------------------*/
+h1 {
+    color: #7E9F19;
+    text-decoration: none;
+
+}
+
+h1 a:hover {
+    background-color: #7E9F19;
+    color: #FFF;
+}
+
+/*------------------------Section----------------------------------------------*/
+section {
+    float: left;        
+    width:500px;
+    height: 400px;
+    margin-top: 30px;
+    background: #7E9F19;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 20px;
+}
+
+/*-----------------------Icones--------------------------------------------*/
+
+@font-face {
+    font-family: 'IconicFill';
+    src: url('../fontes/iconic_fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.icon-next::after {
+    content: '\2192';
+    font-family: 'IconicFill';
+    margin-left: 10px;
+}
+
+h1.icon-next {
+    color: blue;
+}
+
+.icon-ok {
+    color: #489D00;
+}
+.icon-ok::before {
+    content: "\2714";
+    font-family: 'IconicFill';
+    margin-right: 10px;
+}
+.icon-invalid {
+    color: #990000;
+}
+.icon-invalid::before {
+    content: "\2718";
+    font-family: 'IconicFill';
+    margin-right: 10px;
+}
+
+/*------------------------------ Gradiente --------------------------------------*/
+
+/*
+div {
+    font-weight: bold;
+    height: 50px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 220px;
+}
+*/
+.blue {
+    background-color: #4377FA;
+    background-image: linear-gradient(top, #4377FA, #0537B7);
+}
+
+
+/*-------------------------------- Conteudo Principal----------------------------*/
+
+.places {
+    float: left;
+    width: 660px;
+}
+
+article {
+    background: #FFF;
+    border-color: #CCC #999 #999 #CCC;
+    border: 2px solid #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+article h2 {
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+}
+
+article img {
+    width: 156px;
+    height: 156px;
+    border: 1px solid #7E9F19;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+}
+
+.clear {
+    clear: both;
+}
+
+/*-------------------------------------- Barra Lateral----------------------------------*/
+
+aside {    
+    background-color: blueviolet;
+    border: 2px solid #C9BC8F;
+    top: 20px;
+    float: right;
+    height: 80px;
+    margin: 10px;
+    width: 400px;
+    position: relative;
+
+}
+
+aside h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+aside ol{
+    font-size: 12px;
+}
+
+/*-------------------------------------- Footer----------------------------------*/
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    background: #232345;
+
+}

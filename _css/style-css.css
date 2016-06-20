@@ -1,0 +1,36 @@
+
+/* 
+    Created on : 16/06/2016, 09:58:48
+    Author     : Edilson
+*/
+
+#slide {
+    width: 750px;
+    
+    overflow: hidden;
+    height: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 8px #000;
+    position: relative;
+}
+
+#slide img{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    left: 0;
+}
+
+#slide p{
+    z-index: 2;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+    padding: 10px;    
+    font-family: Arial;
+    font-size: 18px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
