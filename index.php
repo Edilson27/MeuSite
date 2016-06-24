@@ -28,7 +28,9 @@ and open the template in the editor.
                 </ul>
             </nav>
             <header id='cabecalho'>
-                <div id="barra-superior"></div>
+                <div id="barra-superior">                    
+                    <span id="pesquisa">Faça sua pesquisa aqui: <input type="text"></span>
+                </div>
                 <hgroup>
                     <h1>Cabeçalho</h1>
                 </hgroup>
@@ -43,7 +45,7 @@ and open the template in the editor.
             </header>
 
             <section class="">
-
+                section
 
             </section>
 

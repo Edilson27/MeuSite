@@ -33,6 +33,27 @@ div#interface {
     padding: 10px;
 }
 
+/*------------------------------------- Pesquisa------------------------------*/
+
+span#pesquisa {
+    display: block;
+    float: right;
+    color: #FFF;
+    font-weight: 200;
+    margin-right: 5px;
+}
+input {
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.25) inset;
+    padding: 2px 5px;
+}
+
+input:focus {
+    border-color: #35861B;
+    box-shadow: 0 0 5px #35861B,2px 2px 2px rgba(0,0,0,0.25) inset; /*Para permanecer a sombra interna*/
+    outline: none;
+}
+
 /*---------------------------Menu----------------------------*/
 nav#menu {
     display: block;
@@ -48,23 +69,26 @@ nav#menu ul {
     margin-left: -35px;
     z-index: 2;    
 
+
 }
 
 nav#menu  li{    
     display: inline-block;
     background-color: red;    
     padding: 20px;
-    margin: 0;
+    margin: 0;    
     margin-left: -5px;
-
+    
+    
     -webkit-transition: background-color 1s;
     -moz-transition: background-color 1s;
     -ms-transition: background-color 1s;
     -o-transition: background-color 1s;
     transition: background-color 1s;
-    border-radius: 0px 40px 0px 20px;
+    border-radius: 5px 5px 5px 5px;
 
 }
+
 
 nav#menu a{
     color: #FFF;    
@@ -72,9 +96,11 @@ nav#menu a{
 }
 
 nav#menu li:hover {
-    background-color: #606060;
+    /*background-color: #606060;*/
     z-index: 1;
-
+    background-color: #A64A28;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.3);
 }
 
 nav#menu ul {
