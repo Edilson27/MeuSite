@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+
+//Movimento dos Slides das imagens
 $(function(){
    $('#slide img:eq(0)').addClass("ativo").show();
    var texto = $(".ativo").attr("alt");
@@ -19,3 +21,17 @@ $(function(){
        }
    }
 });
+
+
+//Janela Modal
+$('#show-modal').on('click',function(){
+    $('.overlay, .notice').show();
+})
+
+$('.overlay, .close').on('click', function(){
+    $('.overlay, .notice').hide();
+})
+
+$('.overlay, .close').keypress('ESC', function(){
+    $('.overlay, .notice').hide();
+})
